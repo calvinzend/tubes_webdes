@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Oswald:wght@300&family=Raleway:ital,wght@0,800;1,400;1,800&family=Roboto+Slab:wght@100&display=swap');
+
 *{
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +12,7 @@
 
 .container{
     width: 100%;
-    height: 200vh;
+    height: 350vh;
     background-color:pink;
 }
 
@@ -60,9 +64,10 @@ header{
 }
 
 .slider-container{
-    height: 35%;
+    height: 20%;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
     
 }
@@ -85,11 +90,58 @@ header{
     font-weight: bold;
 }
 
+.gambar img{
+    border-radius: 30px;
+    box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+    transform: translateY(0px);
+    animation: float ease-out infinite 7s;
+    }
+
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
 .lineup{
     border: #071952 dotted 5px;
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
 .lineup img{
-    width: 500px;
+    margin-left: 50px;
+    clear: left;
+    height: 200px;
+    width: 350px;
+}
+
+.topik{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.fullteam{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: justify;
+}
+
+.fullteam div h3{
+    margin-top: 10px;
+}
+.fullteam div li{
+    margin-top: 10px;
 }
