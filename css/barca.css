@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Oswald:wght@300&family=Raleway:ital,wght@0,800;1,400;1,800&family=Roboto+Slab:wght@100&display=swap');
+
+
+*{
+    font-family: 'Nunito Sans', sans-serif;
+/* font-family: 'Oswald', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Roboto Slab', serif; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(../img/bgbarca-back-white.jpg );
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #071952;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 50%;
+    margin-left: 30px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    transform-origin: right;
+    transform: scaleZ(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.pembuka{
+    margin-left: 50px;
+}
+
+.pembuka h1{
+    color: #071952;
+    overflow: hidden; 
+    border-right: .15em solid #F8DE22; 
+    white-space: nowrap;  
+    animation: typing 3s steps(30) infinite alternate;
+}
+
+.pembuka p{
+    color: black;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+@keyframes typing {
+    from{width:0;}
+    to {
+        width: 90%; 
+    }
+}
+
+.gambar img{
+    transform: translateY(0px);
+    animation: float ease-out infinite 7s;
+    }
+
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+/* marquee{
+    width: 400px;
+    font-size: 25px;
+    font-weight: bold;
+    color: aliceblue;
+} */
