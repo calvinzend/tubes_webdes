@@ -74,7 +74,7 @@ header {
     overflow: hidden; 
     border-right: .15em solid #F8DE22; 
     white-space: nowrap;  
-    animation: typing 3s steps(30) infinite alternate;
+    animation: typing 5s steps(40) infinite alternate;
 }
 
 .pembuka p{
@@ -86,7 +86,7 @@ header {
 @keyframes typing {
     from{width:0;}
     to {
-        width: 90%; 
+        width: 103%; 
     }
 }
 

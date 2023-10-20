@@ -96,7 +96,7 @@ header{
     -webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
     transform: translateY(0px);
-    animation: float ease-out infinite 7s;
+    animation: float ease-out infinite 6s;
     }
 
 @keyframes float{
