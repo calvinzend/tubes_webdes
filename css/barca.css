@@ -37,7 +37,11 @@ header {
     z-index: 99;
 }
 
-.navigation a {
+.navigation{
+    display: flex;
+}
+
+.navigation div a {
     position: relative;
     font-size: 1.1em;
     color: white;
@@ -46,7 +50,7 @@ header {
     margin-left: 30px;
 }
 
-.navigation a::after {
+.navigation div a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -59,10 +63,49 @@ header {
     transform: scaleZ(0);
     transition: transform .5s;
 }
+.navigation .dropdown a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 55%;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    transform-origin: right;
+    transform: scaleZ(0);
+    transition: transform .5s;
+}
 
-.navigation a:hover::after {
+
+
+
+.navigation div a:hover::after {
     transform-origin: left;
     transform: scaleX(1);
+}
+
+.dropdown{
+    padding: 15px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    top:40px;
+    background-color: #071952;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+    border-radius: 8px;
+    position: absolute;
+    min-width: 130px;
+}
+
+
+.navigation div:hover .dropdown{
+    opacity: 1;
+    visibility: visible;
+    top: 60px;
 }
 
 .pembuka{
@@ -105,6 +148,20 @@ header {
     100%{
         transform: translateY(0px);
     }
+}
+
+.pembuka button{
+    margin-top: 30px;
+    width: 90px;
+    height: 30px;
+    border: #071952 2px solid;
+    border-radius: 30px;
+    background: none;
+}
+
+.pembuka button:hover{
+    background-color: violet;
+    transform: scale(1.2);
 }
 /* marquee{
     width: 400px;
