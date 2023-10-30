@@ -21,11 +21,26 @@ function tampilkanGambar(n) {
 function nextSlide() {
     tampilkanGambar(index + 1);
 }
-
-
 tampilkanGambar(index);
 
 setInterval(nextSlide, 3000);
+
+const slide = document.querySelectorAll('.slider');
+const border = ['7px solid red', '7px dashed #071952'];
+let Index = 0;
+
+function gantiborder() {
+  slide.forEach((slide) => {
+      const img = slide.querySelector('img'); 
+      img.style.border = border[Index];
+  });
+
+  
+  Index = (Index + 1) % border.length;
+}
+
+setInterval(gantiborder, 1500); 
+
 
 
 
@@ -45,3 +60,4 @@ window.addEventListener("scroll", function() {
       fullteam.style.opacity = 1; 
     }
   });
+

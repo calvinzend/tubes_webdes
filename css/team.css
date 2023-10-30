@@ -12,7 +12,7 @@
 
 .container{
     width: 100%;
-    height: 350vh;
+    height: 300vh;
     background-color:pink;
 }
 
@@ -107,7 +107,7 @@ header{
 }
 
 .slider-container{
-    height: 20%;
+    height: 25%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -122,12 +122,11 @@ header{
 }
 
 .slider img{
-    border: #071952 4px dashed;
     border-radius: 40%;
     width: 300px;
-    height: 300px;
-    
+    height: 300px;   
 }
+
 
 .slider p {
     margin-top: 12px;
@@ -159,19 +158,49 @@ header{
     opacity: 0;
     border: #071952 dotted 5px;
     margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding-bottom: 40px;
     text-align: center;
     transform: translateY(100%);
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
-.lineup img{
-    margin-left: 50px;
-    clear: left;
+
+.gambarteam div img{
+    max-width: 100%;
     height: 200px;
-    width: 350px;
+    width: 350px; 
 }
+.gambarteam {
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+   
+}
+
+.gambarteam img{
+    float: left;
+}
+
+.lineupGambar:hover .textgambar{
+    opacity: 1;
+}
+
+.textgambar {
+    max-width: 100%;
+    width: 350px;
+    position: absolute;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 200px; 
+    background: rgba(0, 0, 0, 0.7); 
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
 
 .topik{
     margin-top: 30px;
@@ -179,6 +208,7 @@ header{
 }
 
 .fullteam{
+    max-width: 100%;
     opacity: 0;
     transform: translateY(100%);
     transition: transform 0.5s ease, opacity 0.5s ease;
@@ -190,8 +220,28 @@ header{
 }
 
 .fullteam div h3{
+    margin-left: 40px;
     margin-top: 10px;
 }
 .fullteam div li{
+    margin-left: 40px;
     margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+    .slider-container{
+        flex-direction: column;
+        height: 30%;
+    }
+    .gambarteam{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container{
+        height: 450vh;
+    }
+    .fullteam{
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }

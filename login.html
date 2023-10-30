@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
-    <title>Home Barcelona</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Barcelona 2015</title>
     <link rel="icon" type="image/png" href="img/barcelona.png">
-    <link rel="stylesheet" href="css/barca.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <div class="container" id="home">
@@ -12,13 +13,13 @@
             <img src="img/barcelona.png" alt="" width="50px">
             <nav class="navigation">
                 <div>
-                    <a href="#home">Home</a>
+                    <a href="barca.html">Home</a>
                 </div>
                 <div>
                     <a href="#penjelasan">News</a>
                 </div>
                 <div>
-                    <a href="team2015.html">Teams</a>
+                    <a href="team.html">Teams</a>
                     <div class="dropdown">
                         <a href="team2013.html">2013</a>
                         <a href="team2014.html">2014</a>
@@ -30,7 +31,7 @@
                         <a href="team2020.html">2020</a>
                         <a href="team2021.html">2021</a>
                         <a href="team2022.html">2022</a>
-                        <a href="team.2023.html">2023</a>
+                        <a href="team2023.html">2023</a>
                     </div>
                 </div>
                 <div>
@@ -38,26 +39,21 @@
                 </div>  
             </nav>
         </header>
-        <div class="awal">
-            <div class="gambar">
-                <img src="https://www.transparentpng.com/thumb/lionel-messi/KXOqGm-download-lionel-messi-png.png" alt="download lionel messi png @transparentpng.com" width="200px">
-            </div>
-            
-            <!-- <marquee direction="right">Selamat datang di situs FC Barcelona</marquee> -->
-            <div class="pembuka">
-                <h1>Selamat datang di situs FC Barcelona</h1>
-                <p>Kami akan membahas sejarah, team, dan <br>kabar terkini mengenai FC Barcelona</p>
-                <button>News</button>
-            </div>
-            
-            <div class="gambar2">
-                <img src="img/logo.png" alt="download lionel messi png @transparentpng.com" width="200px">
-            </div>
+        <div class="login">
+            <form id="form" onsubmit="return auth(this)" class="form">
+                <input type="text" placeholder="username" id="username" /><br>
+                <input type="text" placeholder="password" id="password" /><br>
+                <button type="submit">Submit</button><br><br>
+                <h3><a href="register.html">Buat Akun</a></h3>
+            </form>
+
         </div>
+    
+        
 
         
-        
+        <footer></footer>
     </div>
-    <div class="container"></div>
+    <script src="js/login.js"></script>
 </body>
 </html>

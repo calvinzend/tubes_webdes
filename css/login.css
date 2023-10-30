@@ -1,11 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Oswald:wght@300&family=Raleway:ital,wght@0,800;1,400;1,800&family=Roboto+Slab:wght@100&display=swap');
 
-
 *{
     font-family: 'Nunito Sans', sans-serif;
-/* font-family: 'Oswald', sans-serif; */
     font-family: 'Raleway', sans-serif;
-    /* font-family: 'Roboto Slab', serif; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,16 +10,13 @@
     scroll-behavior: smooth;
 }
 
-.container {
-    height: 50vh;
-    background-color: whitesmoke;
-    /* background: url(../img/bgbarca-back-white.jpg );
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; */
+.container{
+    width: 100%;
+    height: 350vh;
+    background-color:white;
 }
 
-header {
+header{
     background-color: #071952;
     position: fixed;
     top: 0;
@@ -34,6 +28,7 @@ header {
     align-items: center;
     z-index: 99;
 }
+
 
 .navigation{
     display: flex;
@@ -76,6 +71,8 @@ header {
 }
 
 
+
+
 .navigation div a:hover::after {
     transform-origin: left;
     transform: scaleX(1);
@@ -104,81 +101,98 @@ header {
     top: 60px;
 }
 
-.awal{
+.login, .register{
     width: 100%;
-    height: 100%;
+    height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 350px;
 }
-
-.pembuka{
-    margin-left: 50px;
+.form{
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px #071952 solid;
+     background-color: pink;
+    /* background-image: url(../img/camp-nou.jpg);
+    background-size: cover;
+    background-position:center;  */
+    
 }
-
-.pembuka h1{
-    color: #071952;
-    overflow: hidden; 
-    border-right: .15em solid #F8DE22; 
-    white-space: nowrap;  
-    animation: typing 5s steps(40) infinite alternate;
-}
-
-.pembuka p{
+.form h3 a{
+    
+    text-decoration: none;   
     color: black;
-    margin-top: 20px;
-    font-size: 18px;
+}
+.form2{
+
+    padding-top: 50px;
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    border: 3px #071952 solid;
+    background-image: url(../img/camp-nou.jpg);
+    background-size: cover;
+    background-position:center;    
 }
 
-@keyframes typing {
-    from{width:0;}
-    to {
-        width: 103%; 
-    }
-}
 
-.gambar img{
-    transform: translateY(0px);
-    animation: float ease-out infinite 7s;
-}
 
-@keyframes float{
-    0%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(-30px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
-}
-
-.gambar2 img{
-    animation:infinite  1s logo;
-
-}
-@keyframes logo{
-    0%{
-        transform: scale(0.8);
-    }50%{
-        transform: scale(1.5);
-    }100%{
-        transform: scale(0.8);
-    }
-}
-
-.pembuka button{
-    margin-top: 30px;
-    width: 90px;
-    height: 30px;
-    border: #071952 2px solid;
+input{
+    color: white;
+    text-align: center;
+    height: 40px;
+    width: 70%;
+    background:none;
     border-radius: 30px;
-    background: none;
+    border: #071952 5px solid;
+}
+.form2 input{
+    color: white;
+    text-align: center;
+    height: 40px;
+    width: 80%;
+    background:none;
+    border-radius: 30px;
+    border: #071952 5px solid;
+}
+input:hover{
+    border: black 5px solid;
+}
+::placeholder, button{
+    color: black;
 }
 
-.pembuka button:hover{
-    background-color: violet;
-    transform: scale(1.2);
+button{
+    height: 35px;
+    width: 100px;
+    background: none;
+    border: 5px solid #071952;
+    border-radius: 30px;
 }
+
+button:hover{
+    border: 2px solid white;
+    background-color: #071952;
+    color: white;
+}
+
+input, button{
+    text-align: center;
+    margin-top: 20px;
+}
+.form-group {
+    margin: 10px 0;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  
+ 
