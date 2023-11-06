@@ -2,18 +2,16 @@
 
 *{
     font-family: 'Nunito Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font: sans-serif;
     scroll-behavior: smooth;
+    font-weight: 1px;
 }
 
 .container{
     width: 100%;
-    height: 350vh;
-    background-color: black;
+    background-color:pink;
 }
 
 header{
@@ -70,9 +68,6 @@ header{
     transition: transform .5s;
 }
 
-
-
-
 .navigation div a:hover::after {
     transform-origin: left;
     transform: scaleX(1);
@@ -94,106 +89,9 @@ header{
     min-width: 130px;
 }
 
-
 .navigation div:hover .dropdown{
     opacity: 1;
     visibility: visible;
     top: 60px;
 }
 
-.login, .register{
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.form{
-    border-radius: 20px;
-    width: 400px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 3px #071952 solid;
-    background:url(../img/bgbarca.jpg);
-
-
-    
-}
-.form h3 a{
-    
-    text-decoration: none;   
-    color: black;
-}
-.form2{
-
-    padding-top: 50px;
-    border-radius: 20px;
-    width: 400px;
-    height: 400px;
-    text-align: center;
-    border: 3px #071952 solid;
-    background-image: url(../img/bgbarca.jpg);   
-}
-
-
-
-input{
-    color: white;
-    text-align: center;
-    height: 40px;
-    width: 70%;
-    background:none;
-    border-radius: 30px;
-    border: #071952 5px solid;
-}
-.form2 input{
-    color: white;
-    text-align: center;
-    height: 40px;
-    width: 80%;
-    background:none;
-    border-radius: 30px;
-    border: #071952 5px solid;
-}
-input:hover{
-    border: #FFBB5C 5px solid;
-}
-::placeholder, button{
-    color: #FFBB5C;
-}
-
-button{
-    height: 35px;
-    width: 100px;
-    background: none;
-    border: 5px solid #071952;
-    border-radius: 30px;
-}
-
-button:hover{
-    border: 2px solid white;
-    background-color: #FFBB5C;
-    color: white;
-}
-
-input, button{
-    text-align: center;
-    margin-top: 20px;
-}
-.form-group {
-    margin: 10px 0;
-}
-
-.form h3 a{
-    color: aliceblue;
-}
-  
-label {
-    display: block;
-  }
-  
-  
- 

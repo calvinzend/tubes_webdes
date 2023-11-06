@@ -1,28 +1,62 @@
+var link = document.getElementById("link");
+
+link.addEventListener("click", function(event) {
+  event.preventDefault(); 
+  alert("Minimal daftar dulu dek !!")
+});
+var link2 = document.getElementById("link2");
+
+link2.addEventListener("click", function(event) {
+  event.preventDefault(); 
+  alert("Minimal daftar dulu dek !!")
+});
+var link3 = document.getElementById("link3");
+
+link3.addEventListener("click", function(event) {
+  event.preventDefault(); 
+  alert("Minimal daftar dulu dek !!")
+});
+var link4 = document.getElementById("link4");
+
+link4.addEventListener("click", function(event) {
+  event.preventDefault(); 
+  alert("Minimal daftar dulu dek !!")
+});
+
+
 function auth(event) {
     var username = event.username.value;
     var password = event.password.value;
-
-    if (username === "admin@gmail.com" && password === "user") {
-      window.location.replace("../barca.html");
+  
+    if (username === "kamu@gmail.com" && password === "hehe") {
+      window.location.replace("barca.html");
     } else {
       alert("Mohon masukkan Username dan password yang benar!!");
       return false;
     }
     return false;
 }
-document.addEventListener('DOMContentLoaded', function () {
-    const registrationForm = document.getElementById('registrationForm');
-    const registrationMessage = document.getElementById('registrationMessage');
+
+document.getElementById("registrationForm").addEventListener("submit", function(event) {
+  event.preventDefault(); 
+
+  var username = document.getElementById("username").value;
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+
   
-    registrationForm.addEventListener('submit', function (e) {
-      e.preventDefault();
+  console.log("Username: " + username);
+  console.log("Email: " + email);
+  console.log("Password: " + password);
+  function waktu() {
+    window.location.href = "login.html"; 
+  }
+
   
-      const username = registrationForm.querySelector('#username').value;
-      const email = registrationForm.querySelector('#email').value;
-      const password = registrationForm.querySelector('#password').value;
+  var intervalWaktu = 10000; 
+
+  setTimeout(waktu, intervalWaktu);
   
-      
-     
-      registrationMessage.innerHTML = `<p>Registrasi berhasil untuk username: ${username}</p>`;
-    });
-  });
+});
+
+

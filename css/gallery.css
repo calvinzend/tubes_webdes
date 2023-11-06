@@ -1,22 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Oswald:wght@300&family=Raleway:ital,wght@0,800;1,400;1,800&family=Roboto+Slab:wght@100&display=swap');
 
+
 *{
     font-family: 'Nunito Sans', sans-serif;
+/* font-family: 'Oswald', sans-serif; */
     font-family: 'Raleway', sans-serif;
+    /* font-family: 'Roboto Slab', serif; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font: sans-serif;
     scroll-behavior: smooth;
 }
+    
 
-.container{
-    width: 100%;
-    height: 350vh;
-    background-color: black;
+
+.container {
+    height: 60vh;
+    /* background-color: whitesmoke; */
+    /* background:blak; */
+    background-size: cover;
+    background-position: center;
+
 }
 
-header{
+.container2{
+    background-color: black;
+    width: 100%;
+    height: 680vh;
+}
+
+header {
     background-color: #071952;
     position: fixed;
     top: 0;
@@ -28,7 +42,6 @@ header{
     align-items: center;
     z-index: 99;
 }
-
 
 .navigation{
     display: flex;
@@ -71,8 +84,6 @@ header{
 }
 
 
-
-
 .navigation div a:hover::after {
     transform-origin: left;
     transform: scaleX(1);
@@ -101,99 +112,36 @@ header{
     top: 60px;
 }
 
-.login, .register{
+.swiper{
     width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 563px;
+    margin-top: 80px;
 }
-.form{
-    border-radius: 20px;
-    width: 400px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 3px #071952 solid;
-    background:url(../img/bgbarca.jpg);
-
-
-    
-}
-.form h3 a{
-    
-    text-decoration: none;   
-    color: black;
-}
-.form2{
-
-    padding-top: 50px;
-    border-radius: 20px;
-    width: 400px;
-    height: 400px;
-    text-align: center;
-    border: 3px #071952 solid;
-    background-image: url(../img/bgbarca.jpg);   
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
 }
 
 
-
-input{
-    color: white;
-    text-align: center;
-    height: 40px;
-    width: 70%;
-    background:none;
-    border-radius: 30px;
-    border: #071952 5px solid;
-}
-.form2 input{
-    color: white;
-    text-align: center;
-    height: 40px;
-    width: 80%;
-    background:none;
-    border-radius: 30px;
-    border: #071952 5px solid;
-}
-input:hover{
-    border: #FFBB5C 5px solid;
-}
-::placeholder, button{
-    color: #FFBB5C;
-}
-
-button{
-    height: 35px;
-    width: 100px;
-    background: none;
-    border: 5px solid #071952;
-    border-radius: 30px;
-}
-
-button:hover{
-    border: 2px solid white;
-    background-color: #FFBB5C;
-    color: white;
-}
-
-input, button{
-    text-align: center;
-    margin-top: 20px;
-}
-.form-group {
-    margin: 10px 0;
-}
-
-.form h3 a{
-    color: aliceblue;
-}
-  
-label {
-    display: block;
+.swiper-slide {
+    position: relative;
+    overflow: hidden;
   }
   
-  
- 
+.slide-text{
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    width: 300px;
+    transition: left 1s;
+    position: absolute;
+    bottom: 50px;
+    left: -100% ; 
+
+}
+.swiper-slide-active .slide-text {
+    left: 30px;
+  }
+
+.slide-text h3{
+    color: white;
+}

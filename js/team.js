@@ -26,12 +26,14 @@ tampilkanGambar(index);
 setInterval(nextSlide, 3000);
 
 const slide = document.querySelectorAll('.slider');
-const border = ['7px solid red', '7px dashed #071952'];
+const border = ['7px solid #F5F7F8', '7px solid #FFBB5C'];
 let Index = 0;
 
 function gantiborder() {
   slide.forEach((slide) => {
       const img = slide.querySelector('img'); 
+
+      
       img.style.border = border[Index];
   });
 

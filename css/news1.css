@@ -2,7 +2,7 @@
 
 *{
     font-family: 'Nunito Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,8 +12,7 @@
 
 .container{
     width: 100%;
-    height: 350vh;
-    background-color: black;
+    background-color:pink;
 }
 
 header{
@@ -35,6 +34,8 @@ header{
 }
 
 .navigation div a {
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     position: relative;
     font-size: 1.1em;
     color: white;
@@ -101,99 +102,69 @@ header{
     top: 60px;
 }
 
-.login, .register{
+.pembuka{
+    margin-top: 80px;
+}
+
+.img1{
+    animation:infinite  1s logo;
+
+}
+@keyframes logo{
+    0%{
+        transform: scale(0.8);
+    }50%{
+        transform: scale(1.1);
+    }100%{
+        transform: scale(0.8);
+    }
+}
+
+.text1{
+    font-size: 21px;
+    margin-left: 60px;
+    width: 90%;
+    text-align: justify;
+}
+
+.jadwal{
     width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-.form{
-    border-radius: 20px;
-    width: 400px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 3px #071952 solid;
-    background:url(../img/bgbarca.jpg);
 
-
-    
-}
-.form h3 a{
-    
-    text-decoration: none;   
-    color: black;
-}
-.form2{
-
-    padding-top: 50px;
-    border-radius: 20px;
-    width: 400px;
-    height: 400px;
-    text-align: center;
-    border: 3px #071952 solid;
-    background-image: url(../img/bgbarca.jpg);   
+.text2{
+    font-size: 16px;
+    margin-left: 60px;
+    float: left;
+    width: 40%;
 }
 
 
-
-input{
-    color: white;
-    text-align: center;
-    height: 40px;
-    width: 70%;
-    background:none;
-    border-radius: 30px;
-    border: #071952 5px solid;
-}
-.form2 input{
-    color: white;
-    text-align: center;
-    height: 40px;
-    width: 80%;
-    background:none;
-    border-radius: 30px;
-    border: #071952 5px solid;
-}
-input:hover{
-    border: #FFBB5C 5px solid;
-}
-::placeholder, button{
-    color: #FFBB5C;
+.siaran{
+    margin-right: 50px;
+    font-size: 17px;
+    clear: left;
+    margin-left: 60px;
 }
 
-button{
-    height: 35px;
-    width: 100px;
-    background: none;
-    border: 5px solid #071952;
-    border-radius: 30px;
+.siaran img{
+    padding-left: 20px;
+    float: right;
 }
 
-button:hover{
-    border: 2px solid white;
-    background-color: #FFBB5C;
-    color: white;
+.akhir{
+    clear: right;
 }
 
-input, button{
-    text-align: center;
+.streaming{
     margin-top: 20px;
-}
-.form-group {
-    margin: 10px 0;
+    margin-left: 60px;
 }
 
-.form h3 a{
-    color: aliceblue;
+.jadwalgambar .imgs{
+    margin-left: 60px;
 }
-  
-label {
-    display: block;
-  }
-  
-  
- 
+
+.gambar3{
+    float: left;
+    margin-right: 20px;
+}
