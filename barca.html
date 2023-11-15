@@ -20,13 +20,13 @@
                 <div>
                     <a href="#news">News</a>
                     <div class="dropdown">
-                        <a href="news1.html">Jadwal</a>
-                        <a href="team2014.html">Kit</a>
+                        <a href="jadwal.html">Jadwal</a>
+                        <a href="kit.html">Kit</a>
                         <a href="team2015.html">B. D'or</a>
                     </div>
                 </div>
                 <div>
-                    <a href="team2015.html">Teams</a>
+                    <a href="team.html">Teams</a>
                     <div class="dropdown">
                         <a href="team2013.html">2013</a>
                         <a href="team2014.html">2014</a>
@@ -42,7 +42,12 @@
                     </div>
                 </div>
                 <div>
-                    <a href="#dampak">History</a>
+                    <a href="#history">History</a>
+                    <div class="dropdown">
+                        <a href="jadwal.html">Sejarah</a>
+                        <a href="kit.html">Trofi</a>
+                        <a href="team2015.html">Legenda</a>
+                    </div>
                 </div>  
             </nav>
         </header>
@@ -59,17 +64,17 @@
                 <h1>Selamat datang di situs FC Barcelona</h1>
                 <p>Kami akan membahas sejarah, team, dan <br>kabar terkini mengenai FC Barcelona</p>
                 <button><a href="#news">News</a></button>
-                <button><a href="#team">Team</a></button>
+                <button style="margin-left: 10px;"><a href="#team">Team</a></button>
             </div>
         </div>
         <hr id="news"><br><br>
-        <h1 style="color:#FFBB5C;margin-top: 50px;" align="center" >News</h1>
+        <h1 style="color:#FFBB5C;margin-top: 50px;" align="center">News</h1>
         <div class="news" >
-            <div class="jadwal"><a href="news1.html">
+            <div class="jadwal"><a href="jadwal.html">
                 <img src="news/foto.jpg" alt="" width="250px" height="150px">
                 <h3>Jadwal dan siaran pertandingan Barcelona</h3></a>
             </div>
-            <div class="kit"><a href="">
+            <div class="kit"><a href="kit.html">
                 <img src="news/kit.jpg" alt="" width="250px" height="150px">
                 <h3>New Kit Barcelona 2023/2024</h3></a>
             </div>
@@ -78,6 +83,7 @@
                 <h3>Para Pemenang Ballon D'or dari Tim Barcelona</h3></a>
             </div>
         </div>
+        
         <hr id="team"><br><br>
         <h1 style="color:#FFBB5C;margin-top: 50px;" align="center" >Teams</h1>
         <div class="teamUtama">
@@ -163,10 +169,11 @@
                     </div></a>
                 </div>
             </div>
+        </div>
             <hr><br><br>
             <h1 style="color:#FFBB5C;margin-top: 50px;" align="center" >Stadion Camp Nou</h1>
             <div class="stadion">
-                <a href=""><div class="gambarst"></div></a>
+                <a href="stadion.html"><div class="gambarst"></div></a>
                 <h3 style="color:white;margin-top: 50px;">Nama lengkap : Spotify Camp Nou<br>
                     Lokasi	: Barcelona, Catalunya, Spanyol<br>
                     Pemilik	: FC Barcelona</h3>
@@ -174,32 +181,112 @@
             <hr><br><br>
             <h1 style="color:#FFBB5C;margin-top: 50px;" align="center" >Gallery</h1>
             <div class="stadion">
-                <img src="gallery/terbaik.jpg" alt="" usemap="#terbaik" width="700px">
+                <img src="gallery/terbaik.jpg" alt="" usemap="#terbaik" width="700px" class="link">
                 <map name="terbaik">
-                    <area shape="circle" coords="80,246,80" href="team.html" alt="">
-                    <area shape="circle" coords="350,246,80" href="messi.html" alt="">
-                    <area shape="circle" coords="608,246,80" href="team.html" alt="">
+                    <area shape="circle" coords="80,246,80" href="iniesta.html" alt="Iniesta">
+                    <area shape="circle" coords="350,246,80" href="messi.html" alt="Messi">
+                    <area shape="circle" coords="608,246,80" href="xavi.html" alt="Xavi">
                 </map>
-
-
-
-                
             </div>
+            
+            <marquee behavior="" direction="right" style="background-color: #0C356A;;">
+                <div class="latar">
+                    <div class="trofi" >
+                        <h4>La Liga</h4>
+                        <img src="img/Laliga.png" alt="" width="50px" class="piala">
+                        <h1>27</h1>
+                        <h4>Title</h4>
+                    </div>
+                    <div class="trofi">
+                        <h4>UEFA<br> Champions<br> League</h4>
+                        <img src="img/ucl.png" alt=""  width="50px" class="piala">
+                        <h1>5</h1>
+                        <h4>Title</h4>
+                    </div>
+                    <div class="trofi">
+                        <h4>Copa de <br> Rey</h4>
+                        <img src="img/copa de rey.png" alt=""  width="50px" class="piala">
+                        <h1>31</h1>
+                        <h4>Title</h4>
+                    </div>
+                    <div class="trofi">
+                        <h4>Fifa Club<br>World Cup</h4>
+                        <img src="img/worldclub.png" alt=""  width="40px" height="80px">
+                        <h1>3</h1>
+                        <h4>Title</h4>
+                    </div>
+                </div>
+            </marquee>
+            <hr id="history"><br><br>
+             <h1 style="color:#FFBB5C;margin-top: 50px;" align="center" >History</h1><br><br>
 
-            
-            
-            
-        </div>
+            <div class="history">
+                <div class="tes">
+                    <div class="sejarah">
+                        <a href="sejarah.html">
+                            <img src="history/1899.jpg" alt="" width="200px" height="150px">
+                            <h3>Sejarah Awal Barcelona</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="sejarah">
+                    <a href="team2015.html">
+                        <img src="2015/team.jpg" alt="" width="200px" height="150px">
+                        <h3>Trofi Barcelona</h3>
+                        
+                    </a>
+                </div>
+                <div class="sejarah">
+                    <a href="team2015.html">
+                        <img src="history/barca-206108.jpeg" alt="" width="200px" height="150px">
+                        <h3>Para Legenda Barcelona</h3>
+                    </a>
+                </div>
+            </div>
+            <footer>
+                <div class="linkf">
+                    <div class="footer1">
+                        <h3>Home</h3>
+                        <p>Barcelona</p>
+                        <p>About</p>
+                    </div>
+                    <div class="footer2">
+                       <h3>News</h3>
+                       <p>Jadwal</p>
+                       <p>Kit 2023</p>
+                       <p>Ballon D'or</p>
+                    </div>
+                    <div class="footer3">
+                        <h3>Teams</h3>
+                        <p>Teams</p>
+                        <p>2013</p>
+                        <p>2014</p>
+                        <p>2015</p>
+                        <p>2016</p>
+                        <p>2017</p>
+                    </div>
+                    <div class="footer4">
+                        <h3>History</h3>
+                        <p>Sejarah Awal</p>
+                        <p>Trofi</p>
+                        <p>Legenda</p>
+                    </div>
+                    <div class="footer5">
+                        <h3>Gallery</h3>
+                        <p>Iniesta</p>
+                        <p>Messi</p>
+                        <p>Xavi</p>
+                    </div>
+                </div>
+                <hr class="hehe">
+            </footer>
     </div>
 
 
 
 
 
-<script>
-    var audio = document.getElementById("myAudio");
-    audio.play();
-</script>
+<script src="js/barca.js"></script>
 
 <!-- <div class="gambar2">
     <img src="img/logo2.png" alt="download lionel messi png @transparentpng.com" width="150px">

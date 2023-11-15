@@ -10,10 +10,19 @@
     scroll-behavior: smooth;
 }
 
+h1{
+    color: #FFBB5C;
+}
+
+p{
+    color: white;
+}
+
 .container{
     width: 100%;
     height: 350vh;
-    background-color:pink;
+    background-size: cover;
+    background:url(../img/bgteams.jpg);
 }
 
 header{
@@ -100,3 +109,95 @@ header{
     visibility: visible;
     top: 60px;
 }
+
+.pembuka{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.text1{
+    width: 50%;
+    text-align: center;
+    
+}
+
+#buka{
+    margin-top: 50px;
+    border-radius: 50%;
+    background-color: #FFBB5C;
+    width: 100px;
+    height: 40px;
+}
+
+#buka:hover{
+    transform: scale(1.2);
+    color: white;
+}
+
+.teamUtama{
+    margin-top: 50px;
+    display: none;
+    width: 100%;
+
+}
+
+.teamUtama p {
+    
+    color: black;
+}
+
+.atas{
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.bawah{
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.team {
+    border-radius: 20px;
+    height: 250px;
+    width: 200px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.team h3{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+
+}   
+.team:hover{
+    background-color: #FFBB5C;
+    transform: scale(1.1);
+}
+
+.topik {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #FFBB5C;
+    color: black;
+    transform: translateY(100%);
+    transition: transform 0.4s;
+}
+
+.topik p {
+    font-size: 14px;
+    text-align: center;
+}
+  
+.team:hover .topik {
+    transform: translateY(0);
+} 

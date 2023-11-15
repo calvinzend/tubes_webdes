@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Oswald:wght@300&family=Raleway:ital,wght@0,800;1,400;1,800&family=Roboto+Slab:wght@100&display=swap');
+
+
+*{
+    font-family: 'Nunito Sans', sans-serif;
+/* font-family: 'Oswald', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Roboto Slab', serif; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: sans-serif;
+    scroll-behavior: smooth;
+}
+    
+
+
+.container {
+    height: 175vh;
+    /* background-color: whitesmoke; */
+    background-color: black;
+    /* background-image: url(../img/bgbarca.jpg); */
+    background-size: cover;
+    background-position: center;
+
+}
+
+.container2{
+    background-color: black;
+    width: 100%;
+    height: 680vh;
+}
+
+header {
+    background-color: #071952;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.navigation{
+    display: flex;
+}
+
+.navigation div a {
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 50%;
+    margin-left: 30px;
+}
+
+.navigation div a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    transform-origin: right;
+    transform: scaleZ(0);
+    transition: transform .5s;
+}
+.navigation .dropdown a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 55%;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    transform-origin: right;
+    transform: scaleZ(0);
+    transition: transform .5s;
+}
+
+
+.navigation div a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.dropdown{
+    padding: 15px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+    top:40px;
+    background-color: #071952;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+    border-radius: 8px;
+    position: absolute;
+    min-width: 130px;
+}
+
+
+.navigation div:hover .dropdown{
+    opacity: 1;
+    visibility: visible;
+    top: 60px;
+}
+
+.pembuka{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.teks1 {
+    width: 55%;
+    color: white;
+    margin-left: 2%;
+    padding-top: 40px;
+
+}
+.gambar1 {margin-top: 50px;
+    float: right;
+    width: 45%;
+}
+
+.bagian2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.teks2 {
+    width: 50%;
+    color: white;
+    margin-left: 2%;
+    padding-top: 40px;
+}
+.gambar2 {
+    margin-top: 50px;
+    float: right;
+    width: 45%;
+    margin-left: 5%;
+}
+.bagian3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.teks3 {
+    width: 50%;
+    color: white;
+    margin-left: 2%;
+    padding-top: 40px;
+}
+.gambar3 {
+    margin-top: 50px;
+    float: right;
+    width: 45%;
+    margin-left: 5%;
+}
+.teks4 {
+    color: white;
+    margin-left: 2%;
+    padding-top: 40px;
+}

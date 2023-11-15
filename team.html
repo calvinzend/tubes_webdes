@@ -6,6 +6,7 @@
     <title>Team Barcelona 2015</title>
     <link rel="icon" type="image/png" href="img/barcelona.png">
     <link rel="stylesheet" href="css/hometeam.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container" id="home">
@@ -39,10 +40,106 @@
                 </div>  
             </nav>
         </header>
-
+        <div class="pembuka">
+            <h1>Teams</h1>
+            <div class="text1">
+                <p>Disini kami akan memberikan nama-nama pemain dan pelatih teams FC Barcelona dari tahun 2013-2023 dan menjelaskan prestasi yang berhasil didapat ditahun tersebut.</p>
+                <button id="buka">Next</button>
+            </div>
+            <div class="teamUtama">
+                <div class="atas">
+                    <div class="team"><a href="team2013.html">
+                        <img src="2013/team.jpg" alt="" width="200px" height="150px">
+                        <h3>Team Barca 2012/2013</h3>
+                        <div class="topik">
+                            <p>Manager : Tito Vilanova</p>
+                            <p>Captain : Carles Puyol</p>
+                        </div></a>
+                    </div>
+                    <div class="team"><a href="team2014.html">
+                        <img src="2014/team.jpg" alt="" width="200px" height="150px">
+                        <h3>Team Barca 2013/2014</h3>
+                        <div class="topik">
+                            <p>Manager : Gerardo Martino</p>
+                            <p>Captain : Carles Puyol</p>
+                        </div></a>
+                    </div>
+                    <div class="team"><a href="team2015.html">
+                        <img src="2015/team.jpg" alt="" width="200px" height="150px">
+                        <h3>Team Barca 2014/2015</h3>
+                        <div class="topik">
+                            <p>Manager : Luis Enrique</p>
+                            <p>Captain : Xavi</p>
+                        </div></a>
+                    </div>
+                    <div class="team"><a href="team2016.html">
+                        <img src="2016/team.jpg" alt="" width="200px" height="150px">
+                        <h3>Team Barca 2015/2016</h3>
+                        <div class="topik">
+                            <p>Manager : Luis Enrique</p>
+                            <p>Captain : Adreas Iniesta</p>
+                        </div></a>
+                    </div>
+                    <div class="team"><a href="team2017.html">
+                        <img src="2017/team.jpg" alt="" width="200px" height="150px">
+                        <h3>Team Barca 2016/2017</h3>
+                        <div class="topik">
+                            <p>Manager : Luis Enrique</p>
+                            <p>Captain : Adreas Iniesta</p>
+                        </div></a>
+                    </div>
+                </div>
+                <div class="bawah">
+                    <div class="team"><a href="team2018.html">
+                        <img src="2018/team.jpg" alt="" width="200px" height="150px">
+                        <h3>Team Barca 2017/2018</h3>
+                        <div class="topik">
+                            <p>Manager : Ernesto Valverde</p>
+                            <p>Captain : Adreas Iniesta</p>
+                        </div></a>
+                    </div>
+                    <div class="team"><a href="team2019.html">
+                        <img src="2019/team.avif" alt="" width="200px" height="150px">
+                        <h3>Team Barca 2018/2019</h3>
+                        <div class="topik">
+                            <p>Manager : Ernesto Valverde</p>
+                            <p>Captain : Lionel Messi</p>
+                        </div></a>
+                    </div>
+                    <div class="team"><a href="team2020.html">
+                        <img src="2020/team.jpg" alt="" width="200px" height="150px">
+                        <h3>Team Barca 2019/2020</h3>
+                        <div class="topik">
+                            <p>Manager : Ernesto Valverde</p>
+                            <p>Captain : Lionel Messi</p>
+                        </div></a>
+                    </div>
+                    <div class="team"><a href="team2021.html">
+                        <img src="2021/team.jpg" alt="" width="200px" height="150px">
+                        <h3>Team Barca 2020/2021</h3><div class="topik">
+                            <p>Manager : Ronald koeman</p>
+                            <p>Captain : Lionel Messi</p>
+                        </div></a>
+                    </div>
+                    <div class="team"><a href="team2022.html">
+                        <img src="2022/team.jpg" alt="" width="200px" height="150px">
+                        <h3>Team Barca 2021/2022</h3><div class="topik">
+                            <p>Manager : Xavi Hernandez</p>
+                            <p>Captain : Sergio Busquest</p>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         <footer></footer>
     </div>
-    <script src="js/team.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#buka").click(function() {
+                $(".teamUtama").slideToggle();
+            });
+        });
+    </script>
 </body>
 </html>

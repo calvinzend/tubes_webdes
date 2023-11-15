@@ -1,20 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Oswald:wght@300&family=Raleway:ital,wght@0,800;1,400;1,800&family=Roboto+Slab:wght@100&display=swap');
 
+
 *{
     font-family: 'Nunito Sans', sans-serif;
+/* font-family: 'Oswald', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Roboto Slab', serif; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font: sans-serif;
     scroll-behavior: smooth;
-    font-weight: 1px;
 }
 
-.container{
-    width: 100%;
-    background-color:pink;
+
+
+.container {
+    color: white;
+    /* background-color: whitesmoke; */
+    background:black;
+    background-size: cover;
+    background-position: center;
+
 }
 
-header{
+
+header {
     background-color: #071952;
     position: fixed;
     top: 0;
@@ -26,7 +37,6 @@ header{
     align-items: center;
     z-index: 99;
 }
-
 
 .navigation{
     display: flex;
@@ -68,6 +78,7 @@ header{
     transition: transform .5s;
 }
 
+
 .navigation div a:hover::after {
     transform-origin: left;
     transform: scaleX(1);
@@ -89,9 +100,68 @@ header{
     min-width: 130px;
 }
 
+
 .navigation div:hover .dropdown{
     opacity: 1;
     visibility: visible;
     top: 60px;
 }
 
+h1{
+    color: #FFBB5C;
+}
+
+.logo{
+    margin-top: 30px;
+}
+
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    width: 230px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #071952;
+}
+
+button:hover ,button a:hover{
+    color: goldenrod;
+    background-color: darkred;
+}
+
+.i2{
+    margin-left: 50px;
+}
+
+.gambar2 img{
+    border-radius: 30px;
+}
+
+p, h1{
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: justify;
+}
+
+.unik{
+    margin-top: 30px;
+}
+
+.vidio p{
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.vidio h1{
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.vidio{
+    text-align: center;
+}

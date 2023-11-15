@@ -157,11 +157,11 @@ header{
 }
 
 .lineup{
-    opacity: 0;
     border: #071952 dotted 5px;
     margin-top: 40px;
     padding-bottom: 40px;
     text-align: center;
+    opacity: 0;
     transform: translateY(100%);
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
